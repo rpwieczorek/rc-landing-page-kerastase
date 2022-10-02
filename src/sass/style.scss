@@ -157,7 +157,7 @@ body {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px 15px;
+      gap: 0 0px;
     }
     &__tile {
       padding: 10px;
@@ -181,12 +181,32 @@ body {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px 15px;
+      gap: 10 0;
     }
     &__tile {
       padding: 10px;
       max-width: 480px;
       height: 100%;
+      position: relative;
+    }
+    &__content {
+      position: absolute;
+      text-align: center;
+      top:25%;
+      left:4%;
+      &--1{
+        width: 62%;
+      }
+      &--2 {
+        width: 47%;
+      }
+    }
+    &__title {
+      @include text;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      padding-bottom: 10px;
     }
     &__image {
       @include img;
@@ -194,11 +214,11 @@ body {
     }
     &__text {
       @include text;
-      font-size: 13px;
-      padding: 30px;
+      font-size: 11px;
     }
+
     &__link {
-      margin: 20px auto 15px;
+      margin: 10px auto;
       padding: 0;
       line-height: inherit;
       color: inherit;
@@ -210,7 +230,7 @@ body {
       text-decoration: none;
       color: #fff;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       text-align: center;
       transition: all 0.3s ease-in-out !important;
@@ -230,6 +250,13 @@ body {
         transition: transform 0.3s ease-in-out !important;
         transform: scaleX(0);
         transform-origin: left;
+      }
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .es-about-2 {
+      &__content {
+        top: 12%;
       }
     }
   }
