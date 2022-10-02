@@ -16,30 +16,99 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="es-garnier" id="es-garnier">
+    <div class="es-kerastase" id="es-kerastase">
 
 
 
     <!-- Swiper -->
-    <div class="swiper kvSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+    <div class="es-kv">
+      <div class="swiper es-kv__swiper kvSwiper">
+        <div class="swiper-wrapper es-kv__swiper-wrapper">
+          <div class="swiper-slide es-kv__swiper-slide">
+            <img src="./images/bg-kv-1.png" alt="" >
+            <div class="es-kv__content">
+              <p class="es-kv__subtitle">nowość</p>
+              <p class="es-kv__title">chroma absolu</p>
+              <p class="es-kv__text">Odbudowująca, kwasowa pielęgnacja do wszystkich typów włosów koloryzowanych. Gama oparta na dobroczynnym działaniu kwasów odbudowuje włosy od wewnątrz, co stwarza podstawę dla zapewnienia ich zdrowego wyglądu oraz pięknego
+                i długotrwałego koloru.</p>
+              <a href="#" class="es-kv__link">Zobacz więcej</a>
+            </div>
+          </div>
+          <div class="swiper-slide es-kv__swiper-slide">
+            <img src="./images/bg-kv-2.png" alt="">
+            <div class="es-kv__content">
+              <p class="es-kv__title">blond absolu</p>
+              <p class="es-kv__text">Blond Absolu zaspokaja najistotniejsze potrzeby pielęgnacji włosów koloru
+                blond – intensywną pielęgnację włókien oraz natychmiastową neutralizację
+                odcienia – bez kompromisów.</p>
+              <a href="#" class="es-kv__link">Zobacz więcej</a>
+            </div>
+          </div>
+          <div class="swiper-slide es-kv__swiper-slide">
+            <img src="./images/bg-kv-3.png" alt="">
+            <div class="es-kv__content">
+              <p class="es-kv__title">genesis</p>
+              <p class="es-kv__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <a href="#" class="es-kv__link">Zobacz więcej</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination es-kv__swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-
+   
+    <div class="es-about">
+      <div class="es-about__wrapper">
+        <div class="es-about__tile">
+          <img src="./images/about-1.png" class="es-about__image" alt="">
+        </div>
+        <div class="es-about__tile">
+          <p class="es-about__text">Od 1964 roku marka Kérastase skupia się dostarczaniu wyjątkowych rezultatów na włosach i skórze głowy poprzez spersonalizowaną pielęgnację w domu oraz w salonie fryzjerskim. Wszystko to dzięki ekspertyzie naukowej, profesjonalnej wiedzy i&nbsp;intuicyjnemu zrozumieniu, jakie są prawdziwe oczekiwania Klientów wobec produktów do włosów.</p>
+        </div>
+      </div>
+    </div>
+   
+    <div class="es-about-2">
+      <div class="es-about-2__wrapper">
+        <div class="es-about-2__tile">
+          <img src="./images/about-2.png" class="es-about-2__image" alt="">
+          <p class="es-about-2__title">Pielęgnacja szyta na miarę potrzeb
+            Twoich włosów i skóry głowy</p>
+          <p class="es-about-2__text">Zastanawiasz się, jakie produkty wybrać, by osiągnąć wyjątkowe efekty?</p>
+          <a href="#" class="es-about-2__link">Zobacz więcej</a>
+        </div>
+        <div class="es-about-2__tile">
+          <img src="./images/about-3.png" class="es-about-2__image" alt="">
+          <p class="es-about-2__title">FUSIO-DOSE</p>
+          <p class="es-about-2__text">Odkryj natychmiastową transformację włosów w Salonie fryzjerskim</p>
+          <a href="#" class="es-about-2__link">Zobacz więcej</a>
+        </div>
+      </div>
+    </div>
+   
+   
+   
+   
+   
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".kvSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: true,
+        // },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
+  </div>
   </body>
 </html>

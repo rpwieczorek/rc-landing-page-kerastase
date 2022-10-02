@@ -68,13 +68,199 @@ body {
     color: #000;
   }
   .es-kv {
-
+    &__swiper {
+      width: 100%;
+      max-height: 100%;
+    }
+    
+    &__swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+      /* Center slide text vertically */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    &__swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__content{
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    &__title {
+      @include text;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    &__subtitle {
+      @include text;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 300;
+    }
+    &__text {
+      @include text;
+      font-size: 17px;
+      font-weight: 400;
+      padding-top: 20px;
+    }
+    &__link {
+      margin: 20px auto 15px;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      position: relative;
+      display: inline-block;
+      padding: 8px 35px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease-in-out !important;
+      background: black;
+      transition: color 0.3s ease-in-out !important;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #980c75;
+        transition: transform 0.3s ease-in-out !important;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    }
+  }
+  .es-about {
+    margin: 20px auto 0;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px 15px;
+    }
+    &__tile {
+      padding: 10px;
+      max-width: 480px;
+      height: 100%;
+    }
+    &__image {
+      @include img;
+      object-fit: cover;
+    }
+    &__text {
+      @include text;
+      font-size: 13px;
+      padding: 30px;
+    }
+  }
+  .es-about-2 {
+    margin: 0 auto 20px;
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px 15px;
+    }
+    &__tile {
+      padding: 10px;
+      max-width: 480px;
+      height: 100%;
+    }
+    &__image {
+      @include img;
+      object-fit: cover;
+    }
+    &__text {
+      @include text;
+      font-size: 13px;
+      padding: 30px;
+    }
+    &__link {
+      margin: 20px auto 15px;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      position: relative;
+      display: inline-block;
+      padding: 8px 35px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease-in-out !important;
+      background: black;
+      transition: color 0.3s ease-in-out !important;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #980c75;
+        transition: transform 0.3s ease-in-out !important;
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    }
   }
 
-
-  @media screen and (min-width: 998px) {
+  @media screen and (min-width: 728px) {
     .es-kv {
-      
+      &__swiper-slide {
+        position: relative;
+      }
+      &__content {
+        width: 55%;
+        padding: 0 40px;
+        position: absolute;
+        top: 25%;
+        right: 0;
+      }
+
+      &__title {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      &__subtitle {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      &__text {
+        font-size: 12px;
+        padding-top: 20px;
+      }
     }
   
   }
