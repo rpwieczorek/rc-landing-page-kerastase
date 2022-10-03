@@ -483,6 +483,128 @@
       </div>
     </div>
 
+    <div class="es-discover-2">
+      <h3 class="es-discover-2__title">odkryj inne gamy</h3>
+      <div class="swiper es-discover-2__swiper discover2Swiper">
+        <div class="swiper-wrapper es-discover-2__swiper-wrapper">
+          <div class="swiper-slide es-discover-2__swiper-slide">
+            <div class="es-discover-2__content">
+              <div class="es-discover-2__product">
+                <div class="es-discover-2__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-2-1.png"
+                      alt=""
+                      class="es-discover-2__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover-2__text"><strong>Genesis</strong></h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover-2__link"
+                  aria-label="lorem"
+                  >Sprawdź</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover-2__swiper-slide">
+            <div class="es-discover-2__content">
+              <div class="es-discover-2__product">
+                <div class="es-discover-2__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-2-2.png"
+                      alt=""
+                      class="es-discover-2__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover-2__text"><strong>Resistance</strong></h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover-2__link"
+                  aria-label="lorem"
+                  >Sprawdź</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover-2__swiper-slide">
+            <div class="es-discover-2__content">
+              <div class="es-discover-2__product">
+                <div class="es-discover-2__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-2-3.png"
+                      alt=""
+                      class="es-discover-2__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover-2__text"><strong>Blond absolu</strong></h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover-2__link"
+                  aria-label="lorem"
+                  >Sprawdź</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover-2__swiper-slide">
+            <div class="es-discover-2__content">
+              <div class="es-discover-2__product">
+                <div class="es-discover-2__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-2-4.png"
+                      alt=""
+                      class="es-discover-2__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover-2__text"><strong>Chroma Absolu</strong></h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover-2__link"
+                  aria-label="lorem"
+                  >Sprawdź</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-next-discover-2">
+        <img src="./images/right-arrow.png" class="es-discover-2__arrow" alt="">
+      </div>
+      <div class="swiper-button-prev swiper-button-prev-discover-2">
+        <img src="./images/left-arrow.png" class="es-discover-2__arrow" alt="">
+      </div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -529,19 +651,32 @@
         },
       });
     </script>
-        <script>
-          var swiper = new Swiper(".discoverSwiper", {
-            slidesPerView: "auto",
-            spaceBetween: 2,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            navigation: {
-              nextEl: ".swiper-button-next-discover",
-              prevEl: ".swiper-button-prev-discover",
-            },
-          });
-        </script>
+    <script>
+      var swiper = new Swiper(".discoverSwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 2,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next-discover",
+          prevEl: ".swiper-button-prev-discover",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".discover2Swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 5,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next-discover-2",
+          prevEl: ".swiper-button-prev-discover-2",
+        },
+      });
+    </script>
   </div>
   </body>
 </html>
