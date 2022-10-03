@@ -11,13 +11,9 @@
 }
 
 $regular: 'Montserrat', sans-serif;
-$pink: #f08ab5;
-$yellow: #f7dd52;
-$pink-light: #f2e4e5;
-$pink-dark: #980c75;
-$button: #f5835a;
-$primary: #f47242;
-$secondary: #f75172;
+$button: black;
+$buttonHover: #f75172; 
+$pink-dark:white;
 
 html,
 body {
@@ -115,40 +111,24 @@ body {
       padding-top: 20px;
     }
     &__link {
-      margin: 20px auto 15px;
+      margin: 10px auto;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      position: relative;
       display: inline-block;
       padding: 8px 35px;
       text-decoration: none;
       color: #fff;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       text-align: center;
-      transition: all 0.3s ease-in-out !important;
-      background: black;
-      transition: color 0.3s ease-in-out !important;
-      z-index: 1;
-      &::before {
-        content: "";
-        position: absolute;
-        border-radius: 4px;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        background-color: #980c75;
-        transition: transform 0.3s ease-in-out !important;
-        transform: scaleX(0);
-        transform-origin: left;
+      background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all .5s ease-out;
+      &:hover {
+        background-position: left bottom;
       }
-    }
+    }  
   }
   .es-about {
     margin: 20px auto 10px;
@@ -218,11 +198,6 @@ body {
     &__link {
       margin: 10px auto;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      position: relative;
       display: inline-block;
       padding: 8px 35px;
       text-decoration: none;
@@ -231,23 +206,12 @@ body {
       font-size: 10px;
       font-weight: 500;
       text-align: center;
-      transition: all 0.3s ease-in-out !important;
-      background: black;
-      transition: color 0.3s ease-in-out !important;
-      z-index: 1;
-      &::before {
-        content: "";
-        position: absolute;
-        border-radius: 4px;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        background-color: #980c75;
-        transition: transform 0.3s ease-in-out !important;
-        transform: scaleX(0);
-        transform-origin: left;
+      background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all .5s ease-out;
+      &:hover {
+        background-position: left bottom;
       }
     }
   }
@@ -320,15 +284,16 @@ body {
   }
   &__product {
     width: 100%;
+    padding-top: 10px;
     margin: 0 auto;
     margin-bottom: 32px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    &:hover .es-cross__link::before {
+    &:hover .es-most-loved__link::before {
       transform: scaleX(1);
     }
-    &:hover .es-cross__packshot {
+    &:hover .es-most-loved__packshot {
       transform: translateY(-8px);
     }
   }
@@ -351,33 +316,22 @@ body {
     font-size: 16px;
   }
   &__link {
-    @include text;
-    position: relative;
+    margin: 10px auto;
+    padding: 0;
     display: inline-block;
-    padding: 8px 22px;
+    padding: 8px 35px;
     text-decoration: none;
     color: #fff;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-align: center;
-    transition: all 0.3s ease-in-out !important;
-    background: black;
-    transition: color 0.3s ease-in-out  !important;
-    z-index: 1;
-    &::hover {
-      content: '';
-      position: absolute;
-      border-radius: 4px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      background-color: $pink-dark;
-      transition: transform 0.3s ease-in-out  !important;
-      transform: scaleX(0);
-      transform-origin: left;
+    background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    &:hover {
+      background-position: left bottom;
     }
   }
   &__img {
@@ -442,15 +396,16 @@ body {
   }
   &__product {
     width: 100%;
+    padding-top: 10px;
     margin: 0 auto;
     margin-bottom: 32px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    &:hover .es-cross__link::before {
+    &:hover .es-hair-type__link::before {
       transform: scaleX(1);
     }
-    &:hover .es-cross__packshot {
+    &:hover .es-hair-type__packshot {
       transform: translateY(-8px);
     }
   }
@@ -474,33 +429,22 @@ body {
     font-size: 16px;
   }
   &__link {
-    @include text;
-    position: relative;
+    margin: 10px auto;
+    padding: 0;
     display: inline-block;
-    padding: 8px 22px;
+    padding: 8px 35px;
     text-decoration: none;
     color: #fff;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-align: center;
-    transition: all 0.3s ease-in-out !important;
-    background: black;
-    transition: color 0.3s ease-in-out  !important;
-    z-index: 1;
-    &::hover {
-      content: '';
-      position: absolute;
-      border-radius: 4px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      background-color: $pink-dark;
-      transition: transform 0.3s ease-in-out  !important;
-      transform: scaleX(0);
-      transform-origin: left;
+    background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    &:hover {
+      background-position: left bottom;
     }
   }
   &__img {
@@ -565,15 +509,16 @@ body {
   }
   &__product {
     width: 100%;
+    padding-top: 10px;
     margin: 0 auto;
     margin-bottom: 32px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    &:hover .es-cross__link::before {
+    &:hover .es-discover__link::before {
       transform: scaleX(1);
     }
-    &:hover .es-cross__packshot {
+    &:hover .es-discover__packshot {
       transform: translateY(-8px);
     }
   }
@@ -596,33 +541,22 @@ body {
     font-size: 16px;
   }
   &__link {
-    @include text;
-    position: relative;
+    margin: 10px auto;
+    padding: 0;
     display: inline-block;
-    padding: 8px 22px;
+    padding: 8px 35px;
     text-decoration: none;
     color: #fff;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-align: center;
-    transition: all 0.3s ease-in-out !important;
-    background: black;
-    transition: color 0.3s ease-in-out  !important;
-    z-index: 1;
-    &::hover {
-      content: '';
-      position: absolute;
-      border-radius: 4px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      background-color: $pink-dark;
-      transition: transform 0.3s ease-in-out  !important;
-      transform: scaleX(0);
-      transform-origin: left;
+    background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    &:hover {
+      background-position: left bottom;
     }
   }
   &__img {
@@ -686,17 +620,17 @@ body {
     @include img;
   }
   &__product {
-    padding: 5px;
+    padding: 12px 5px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 32px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    &:hover .es-cross__link::before {
+    &:hover .es-discover-2__link::before {
       transform: scaleX(1);
     }
-    &:hover .es-cross__packshot {
+    &:hover .es-discover-2__packshot {
       transform: translateY(-8px);
     }
   }
@@ -721,33 +655,22 @@ body {
     font-size: 16px;
   }
   &__link {
-    @include text;
-    position: relative;
+    margin: 10px auto;
+    padding: 0;
     display: inline-block;
-    padding: 8px 22px;
+    padding: 8px 35px;
     text-decoration: none;
     color: #fff;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     text-align: center;
-    transition: all 0.3s ease-in-out !important;
-    background: black;
-    transition: color 0.3s ease-in-out  !important;
-    z-index: 1;
-    &::hover {
-      content: '';
-      position: absolute;
-      border-radius: 4px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      background-color: $pink-dark;
-      transition: transform 0.3s ease-in-out  !important;
-      transform: scaleX(0);
-      transform-origin: left;
+    background: linear-gradient(to right, $buttonHover 50%, $button 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    &:hover {
+      background-position: left bottom;
     }
   }
   &__img {
@@ -812,6 +735,65 @@ body {
     }
   }
 }
+
+.es-articles {
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+  &__title {
+    @include text;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__product {
+    width: 242px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    &:hover .es-articles__product::before {
+      transform: scaleX(1);
+    }
+    &:hover .es-articles__packshot {
+      transform: translateY(-8px);
+    }
+  }
+  &__packshot {
+    border-radius: 5px;
+    transition: transform 0.6s;
+    margin-bottom: 24px;
+  }
+  &__text {
+    @include text;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__desc {
+    @include text;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  &__img {
+    @include img;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
   @media screen and (min-width: 728px) {
     .es-kv {
       &__swiper-slide {
@@ -842,28 +824,6 @@ body {
     }
   
   }
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 @keyframes slideright {
