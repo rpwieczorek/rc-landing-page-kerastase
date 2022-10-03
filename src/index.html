@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garnier</title>
+    <title>Kerastase</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
     rel="stylesheet"
@@ -360,6 +360,128 @@
       </div>
     </div>
 
+    <div class="es-discover">
+      <h3 class="es-discover__title">odkryj blond absolu</h3>
+      <div class="swiper es-discover__swiper discoverSwiper">
+        <div class="swiper-wrapper es-discover__swiper-wrapper">
+          <div class="swiper-slide es-discover__swiper-slide">
+            <div class="es-discover__content">
+              <div class="es-discover__product">
+                <div class="es-discover__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-1.png"
+                      alt=""
+                      class="es-discover__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover__text"><strong>Nazwa produktu</strong><br><br>$$</h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover__link"
+                  aria-label="lorem"
+                  >Do koszyka</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover__swiper-slide">
+            <div class="es-discover__content">
+              <div class="es-discover__product">
+                <div class="es-discover__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-2.png"
+                      alt=""
+                      class="es-discover__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover__text"><strong>Nazwa produktu</strong><br><br>$$</h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover__link"
+                  aria-label="lorem"
+                  >Do koszyka</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover__swiper-slide">
+            <div class="es-discover__content">
+              <div class="es-discover__product">
+                <div class="es-discover__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-3.png"
+                      alt=""
+                      class="es-discover__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover__text"><strong>Nazwa produktu</strong><br><br>$$</h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover__link"
+                  aria-label="lorem"
+                  >Do koszyka</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide es-discover__swiper-slide">
+            <div class="es-discover__content">
+              <div class="es-discover__product">
+                <div class="es-discover__packshot">
+                  <a
+                    href="#"
+                    target="_blank"
+                    aria-label="lorem"
+                  >
+                    <img
+                      src="./images/discover-4.png"
+                      alt=""
+                      class="es-discover__img"
+                    >
+                  </a>
+                </div>
+                <h4 class="es-discover__text"><strong>Nazwa produktu</strong><br><br>$$</h4>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="es-discover__link"
+                  aria-label="lorem"
+                  >Do koszyka</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-next-discover">
+        <img src="./images/right-arrow.png" class="es-discover__arrow" alt="">
+      </div>
+      <div class="swiper-button-prev swiper-button-prev-discover">
+        <img src="./images/left-arrow.png" class="es-discover__arrow" alt="">
+      </div>
+    </div>
 
 
     <!-- Swiper JS -->
@@ -407,6 +529,19 @@
         },
       });
     </script>
+        <script>
+          var swiper = new Swiper(".discoverSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 2,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+              nextEl: ".swiper-button-next-discover",
+              prevEl: ".swiper-button-prev-discover",
+            },
+          });
+        </script>
   </div>
   </body>
 </html>
