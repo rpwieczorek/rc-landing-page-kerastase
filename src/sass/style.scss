@@ -794,6 +794,14 @@ body {
   }
 }
 
+.es-footer {
+  padding-bottom: 20px;
+  &__text {
+    @include text;
+    text-align: center;
+    font-size: 12px;
+  }
+}
 
   @media screen and (min-width: 728px) {
     .es-kv {
