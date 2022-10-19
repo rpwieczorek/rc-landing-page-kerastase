@@ -417,7 +417,7 @@ body {
   }
   &__text {
     @include text;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -648,6 +648,9 @@ body {
     margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
+    & span {
+      font-size: 11px;
+    }
   }
   &__desc {
     @include text;
